@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Off-Market: 1-bed flat in London in EY1C 2AA</title>
+<title>Off-Market: 1-bed house in London</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,11 +27,31 @@
   .details li:last-child { border-bottom: none; }
   .detail-label { color: #999; font-weight: 500; }
   .detail-value { font-weight: 600; text-align: right; max-width: 60%; }
+  .invest-section { background: #f8f7f5; border-radius: 2px; padding: 20px 24px; margin-bottom: 24px; }
+  .invest-header { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 16px; }
+  .invest-rows { list-style: none; }
+  .invest-rows li { padding: 8px 0; border-bottom: 1px solid #eae9e6; font-size: 14px; display: flex; justify-content: space-between; }
+  .invest-rows li:last-child { border-bottom: none; }
+  .invest-label { color: #777; font-weight: 500; }
+  .invest-value { font-weight: 700; text-align: right; }
+  .invest-footnote { font-size: 11px; color: #bbb; line-height: 1.5; margin-top: 14px; }
   .cta-row { display: flex; gap: 10px; }
   .cta { display: block; flex: 1; text-align: center; padding: 14px; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 2px; letter-spacing: 0.02em; }
   .cta-primary { background: #1a1a1a; color: #fff; }
   .cta-secondary { background: #fff; color: #1a1a1a; border: 1.5px solid #1a1a1a; }
   .footer { padding: 20px 28px; border-top: 1px solid #f0f0f0; font-size: 11px; color: #bbb; line-height: 1.5; }
+  .breakdown { max-width: 600px; margin: 16px auto 0; }
+  .breakdown summary { font-family: 'DM Sans', sans-serif; font-size: 13px; color: #999; cursor: pointer; padding: 8px 0; }
+  .breakdown summary:hover { color: #1a1a1a; }
+  .breakdown-content { background: #f8f7f5; border-radius: 2px; padding: 20px 24px; font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.8; color: #555; }
+  .breakdown-content .section-title { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #1a1a1a; margin-top: 16px; margin-bottom: 4px; }
+  .breakdown-content .section-title:first-child { margin-top: 0; }
+  .breakdown-content .row { display: flex; justify-content: space-between; }
+  .breakdown-content .row.total { font-weight: 700; color: #1a1a1a; border-top: 1px solid #ddd; padding-top: 4px; margin-top: 4px; }
+  .breakdown-content .row.result { font-weight: 700; color: #2a7d4f; }
+  .breakdown-content .row.result.negative { color: #c44; }
+  .breakdown-content .sub { padding-left: 16px; color: #999; font-size: 11px; }
+  .breakdown-disclaimer { font-family: 'DM Sans', sans-serif; font-size: 11px; color: #bbb; margin-top: 12px; line-height: 1.5; }
 </style>
 </head>
 <body>
@@ -44,13 +64,13 @@
   </div>
 
   <div class="photo">
-    <img src="https://lh3.googleusercontent.com/d/1rMSTxKNZcm8uTn5RES95VpNjDqbQjok-" alt="Property photo" style="width:100%;height:100%;object-fit:cover;">
+    <img src="https://lh3.googleusercontent.com/d/1FXgKQyPFxM1R7twRwokWjdZ1Go-54jIs" alt="Property photo" style="width:100%;height:100%;object-fit:cover;">
   </div>
 
   <div class="body">
 
-    <div class="property-title">1-bed flat in London</div>
-    <div class="property-location">EY1C 2AA · 6-a city road, flat 1</div>
+    <div class="property-title">1-bed house in London</div>
+    <div class="property-location">EC1Y 2AA · 6A city road EC1Y 2AA</div>
 
     <div class="numbers">
       <div class="number-box">
@@ -68,17 +88,29 @@
     </div>
 
     <ul class="details">
-      <li><span class="detail-label">Tenant status</span><span class="detail-value">Tenanted</span></li>
-      <li><span class="detail-label">Property type</span><span class="detail-value">Flat, 1-bed, 1 bath</span></li>
+      <li><span class="detail-label">Property type</span><span class="detail-value">House, 1-bed, 1 bath</span></li>
+      <li><span class="detail-label">Tenure</span><span class="detail-value">Freehold</span></li>
+      <li><span class="detail-label">Tenant status</span><span class="detail-value">In situ, 18 months, no arrears</span></li>
       <li><span class="detail-label">Condition</span><span class="detail-value">No works needed</span></li>
-      <li><span class="detail-label">Area context</span><span class="detail-value">Good area, always tenants</span></li>
+      <li><span class="detail-label">Area context</span><span class="detail-value">Avg 2-bed rent in S8: £3500/mo</span></li>
       <li><span class="detail-label">Why selling</span><span class="detail-value">Retiring</span></li>
       <li><span class="detail-label">Managed by</span><span class="detail-value">Lime</span></li>
     </ul>
 
+    <div class="invest-section">
+      <div class="invest-header">Your Investment</div>
+      <ul class="invest-rows">
+        <li><span class="invest-label">SDLT estimate</span><span class="invest-value">£93,750</span></li>
+        <li><span class="invest-label">Total cash required</span><span class="invest-value">£345,750</span></li>
+        <li><span class="invest-label">Monthly cashflow (est.)</span><span class="invest-value" style="color:#c44">£1,191/mo</span></li>
+        <li><span class="invest-label">Net yield</span><span class="invest-value" style="color:#c44">-4.1%</span></li>
+      </ul>
+      <div class="invest-footnote">Estimates based on: 75% LTV interest-only at 5.5%, 12% management fee, 1 month void/year, 5% maintenance reserve, £30/mo insurance, £1,500 legal fees, £500 survey. Actual costs may vary. Not financial advice.</div>
+    </div>
+
     <div class="cta-row">
       <a href="gallery.html" class="cta cta-secondary">View property</a>
-      <a href="mailto:anton@dwelly.group?subject=Interest%3A%201-bed%20flat%20in%20London%20in%20EY1C%202AA" class="cta cta-primary">I'm interested</a>
+      <a href="mailto:anton@dwelly.group?subject=Interest%3A%201-bed%20house%20in%20London%20in%20EC1Y%202AA" class="cta cta-primary">I'm interested</a>
     </div>
 
   </div>
@@ -89,6 +121,44 @@
   </div>
 
 </div>
+
+<details class="breakdown">
+<summary>See how we calculated this ▾</summary>
+<div class="breakdown-content">
+<div class="section-title">Purchase</div>
+<div class="row"><span>Asking price</span><span>£1,000,000</span></div>
+<div class="row"><span>SDLT (additional property rate)</span><span></span></div>
+<div class="row sub"><span>£0 – £125,000 at 5%</span><span>£6,250</span></div>
+<div class="row sub"><span>£125,000 – £250,000 at 7%</span><span>£8,750</span></div>
+<div class="row sub"><span>£250,000 – £925,000 at 10%</span><span>£67,500</span></div>
+<div class="row sub"><span>£925,000 – £1,000,000 at 15%</span><span>£11,250</span></div>
+<div class="row total"><span>SDLT total</span><span>£93,750</span></div>
+<div class="row"><span>Legal fees (estimate)</span><span>£1,500</span></div>
+<div class="row"><span>Survey (estimate)</span><span>£500</span></div>
+<div class="section-title">Cash Required</div>
+<div class="row"><span>Deposit (25%)</span><span>£250,000</span></div>
+<div class="row"><span>SDLT</span><span>£93,750</span></div>
+<div class="row"><span>Legal fees</span><span>£1,500</span></div>
+<div class="row"><span>Survey</span><span>£500</span></div>
+<div class="row total"><span>Total cash required</span><span>£345,750</span></div>
+<div class="section-title">Monthly Costs</div>
+<div class="row"><span>Mortgage: £1,000,000 × 75% × 5.5% ÷ 12</span><span>£3,438</span></div>
+<div class="row"><span>Management fee: £3,050 × 12%</span><span>£366</span></div>
+<div class="row"><span>Void allowance: £3,050 × 1/12</span><span>£254</span></div>
+<div class="row"><span>Maintenance reserve: £3,050 × 5%</span><span>£153</span></div>
+<div class="row"><span>Insurance (estimate)</span><span>£30</span></div>
+<div class="row total"><span>Total monthly costs</span><span>£4,241</span></div>
+<div class="section-title">Monthly Cashflow</div>
+<div class="row"><span>Rent</span><span>£3,050</span></div>
+<div class="row"><span>Less total costs</span><span>−£4,241</span></div>
+<div class="row result negative"><span>Net cashflow</span><span>£1,191/mo</span></div>
+<div class="section-title">Net Yield (Cash-on-Cash)</div>
+<div class="row"><span>Annual net income: £1,191 × 12</span><span>£14,292</span></div>
+<div class="row"><span>÷ Total cash required</span><span>£345,750</span></div>
+<div class="row result negative"><span>Net yield</span><span>-4.1%</span></div>
+<div class="breakdown-disclaimer">These are estimates based on standard assumptions. Actual costs may vary. This is not financial advice.</div>
+</div>
+</details>
 
 </body>
 </html>
